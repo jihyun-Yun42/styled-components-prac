@@ -1,5 +1,6 @@
 import './App.css';
-import { Button, Input } from './Style';
+import { Button } from './component/Button';
+import Input from './component/Input';
 
 function App() {
   return (
@@ -7,14 +8,26 @@ function App() {
       <article>
         <h1>Button</h1>
         <section style={{ display: 'flex', margin: '10px', gap: '10px' }}>
-          <Button size="large" color="green" text="Large Primary Button" />
-          <Button size="medium" color="green" text="Medium" />
-          <Button size="small" color="green" text="small" />
+          <Button size="large" color="green" func="alert">
+            Large Primary Button
+          </Button>
+          <Button size="medium" color="green">
+            Medium
+          </Button>
+          <Button size="small" color="green">
+            small
+          </Button>
         </section>
         <section style={{ display: 'flex', margin: '10px', gap: '10px' }}>
-          <Button size="large" color="pink" text="Large Primary Button" />
-          <Button size="medium" color="pink" text="Medium" />
-          <Button size="small" color="pink" text="small" />
+          <Button size="large" color="pink" func="prompt">
+            Large Primary Button
+          </Button>
+          <Button size="medium" color="pink">
+            Medium
+          </Button>
+          <Button size="small" color="pink">
+            small
+          </Button>
         </section>
       </article>
       <article>
